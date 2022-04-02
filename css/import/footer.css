@@ -1,0 +1,22 @@
+.footer .footer__heading {
+  padding: 25px 0;
+  column-gap: 78px;
+}
+.footer .footer__heading .item {
+  font-family: qm;
+}
+.footer .footer__copyright {
+  padding: 12px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid var(--gray-lighter);
+}
+@media screen and (max-width: 767.98px) {
+  .footer .footer__heading{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer__heading .item:nth-child(1){
+    margin-bottom: 12px;
+  }
+}

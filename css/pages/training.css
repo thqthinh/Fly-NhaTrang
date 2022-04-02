@@ -1,0 +1,162 @@
+.sc-training__col .title {
+  margin-top: 12px;
+}
+.sc-training__content {
+  column-gap: 93px;
+}
+.sc-training__col {
+  max-width: 535px;
+  width: 100%;
+}
+.sc-training__col .information .information-list {
+  margin-top: 24px;
+  display: flex;
+  row-gap: 25px;
+  flex-direction: column;
+}
+.sc-training__col .lesson .lesson-desc {
+  margin-top: 18px;
+}
+.sc-training__col.--right .image {
+  margin-left: auto;
+}
+.information .information-list .item {
+  display: flex;
+  column-gap: 16px;
+}
+.information .information-list .item .item-text {
+  color: var(--black-bold);
+}
+.sc-training .container {
+  position: relative;
+  z-index: 2;
+}
+.sc-training .shape-img {
+  top: 221px;
+  left: 0;
+}
+
+/* sc difficult */
+.sc-difficult {
+  overflow: hidden;
+}
+.sc-difficult .shape-img.--map {
+  left: unset;
+  right: 0;
+  top: 0;
+}
+.sc-difficult .shape-img {
+  bottom: -200px;
+  left: 0;
+  z-index: 1;
+}
+.sc-difficult .bg-bottom {
+  bottom: -460px;
+}
+.sc-difficult .container {
+  z-index: 2;
+}
+.sc-difficult .title {
+  margin-bottom: 22px;
+}
+.sc-difficult__content .item:nth-child(2) .item-title {
+  margin-bottom: 32px;
+  margin-top: 45px;
+}
+.sc-difficult__content .item:nth-child(3) .item-title {
+  margin-bottom: 20px;
+}
+.sc-difficult__content .item:nth-child(4) .item-desc {
+  max-width: 774px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sc-difficult__content .item:nth-child(4) .item-title {
+  margin-bottom: 24px;
+}
+.sc-difficult__content .item .item-image {
+  max-width: 501px;
+  padding-bottom: 49.15%;
+}
+.sc-difficult__content .item .item-text .list-gr:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/* resgister */
+.sc-register {
+  position: relative;
+  z-index: 2;
+}
+/* sc gallery */
+.sc-gallery__list {
+  --columns: 3;
+  --gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  grid-gap: var(--gap);
+}
+
+@media screen and (max-width: 767.98px) {
+  /* training */
+  .sc-training__content {
+    padding: 0 26px;
+  }
+  .sc-training__col .title {
+    text-align: center;
+  }
+  .sc-training__col .desc {
+    text-align: justify;
+  }
+  .sc-training__col .information {
+    margin-top: 30px;
+  }
+  .sc-training__col .information .information-list {
+    margin-top: 20px;
+    row-gap: 24px;
+  }
+  .sc-training__col .lesson .lesson-list {
+    margin-top: 12px;
+  }
+  .sc-training__col .lesson .lesson-list .list-gr {
+    margin-bottom: 12px;
+  }
+  .sc-training__col .lesson .lesson-desc {
+    margin-top: 0;
+  }
+  .sc-training__col.--left .image-thumbnail-wrapper {
+    margin-top: 32px;
+  }
+  /* difficult */
+  .sc-difficult .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .sc-difficult .title {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+  .sc-difficult__content .item {
+    padding: 0 36px;
+  }
+  .sc-difficult__content .item .item-text .list-gr:nth-child(1) {
+    margin-top: 24px;
+  }
+  .sc-difficult__content .item .item-text .list-gr:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .sc-difficult__content .item .item-title + .item-image {
+    margin-bottom: 40px;
+  }
+  .sc-difficult__content .sc-register .bg-img {
+    z-index: 1;
+  }
+  
+}
+@media screen and (max-width: 374.98px) {
+  .sc-training__col .title {
+    margin-top: 8px;
+  }
+  /* difficult */
+}

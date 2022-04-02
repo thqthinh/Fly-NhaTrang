@@ -1,0 +1,138 @@
+/* // CSS HOMEPAGE */
+
+/* banner */
+.sc-banner {
+  position: relative;
+}
+
+/* about */
+.sc-about {
+  padding-top: 41px;
+}
+.sc-about .container {
+  z-index: 2;
+}
+.sc-about .shape-img {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sc-about .shape-img.--left {
+  left: 0;
+}
+.sc-about .shape-img.--right {
+  right: 0;
+}
+.sc-about .sc-about__heading {
+  column-gap: 99px;
+}
+.sc-about .sc-about__content .list-gr {
+  max-width: 397px;
+}
+.sc-about .sc-about__member {
+  margin-top: 60px;
+}
+.sc-about .sc-about__member-list {
+  margin-top: 40px;
+}
+.sc-about .sc-about__member-list .item-image img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+/* gallery */
+.sc-gallery__list {
+  position: relative;
+  z-index: 2;
+}
+.sc-gallery__list .item .item-text {
+  margin-top: 20px;
+  font-family: qsb;
+  text-align: center;
+}
+.sc-gallery__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sc-gallery__btn.--prev {
+  left: -5%;
+}
+.sc-gallery__btn.--next {
+  right: -5%;
+}
+
+/* sc reason */
+.sc-reason.hidden-mobile .sc-reason__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px 20px;
+}
+.sc-reason.hidden-mobile .sc-reason__list .item .item-icon {
+  flex-shrink: 0;
+  width: 60px;
+}
+.sc-reason.hidden-mobile .sc-reason__list .item {
+  display: flex;
+  column-gap: 28px;
+}
+.sc-reason.hidden-mobile .sc-reason__list .item .item-text {
+  margin-top: 14px;
+}
+@media screen and (max-width: 767.98px) {
+  /* sc about */
+  .brand-title,
+  .sc-about .title {
+    text-align: left;
+  }
+  .sc-about .title {
+    margin-top: 8px;
+  }
+  .sc-about__image,
+  .sc-about .title,
+  .brand-title,
+  .sc-about__content {
+    padding: 0 26px;
+  }
+  .sc-about__image {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+  .sc-about .shape-img {
+    top: 142px;
+    transform: translateY(0%);
+  }
+  .sc-about .sc-about__content .list-gr:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .sc-about .sc-about__member-list .item .item-title {
+    margin-bottom: 18px;
+  }
+  .sc-about .sc-about__member-list .item .item-content {
+    text-align: center;
+    margin-top: 28px;
+  }
+  .sc-about .sc-about__member .slick-slide img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sc-reason__heading .brand-title {
+    text-align: center;
+  }
+  /*  sc gallery */
+  .sc-gallery {
+    display: block;
+  }
+  .sc-gallery .container {
+    padding: 0 36px;
+  }
+  .sc-gallery__btn img {
+    width: 29px;
+  }
+  .sc-gallery__btn.--next {
+    right: -29px;
+  }
+  .sc-gallery__btn.--prev {
+    left: -29px;
+  }
+}

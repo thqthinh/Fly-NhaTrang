@@ -1,0 +1,67 @@
+@-ms-viewport {
+  width: device-width;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* => 10px = 1rem*/
+}
+body {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: auto;
+  background: var(--white-cl);
+  position: relative;
+  font-size: var(--body16-fs);
+  line-height: var(--body16-lh);
+  font-family: qm;
+  color: var(--black-cl);
+}
+
+body .container-fluid {
+  width: 100%;
+  padding-right: var(--gap);
+  padding-left: var(--gap);
+  margin-right: auto;
+  margin-left: auto;
+}
+body .container {
+  width: 100%;
+  padding-right: calc(var(--gap) / 2);
+  padding-left: calc(var(--gap) / 2);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  body .container-fluid {
+    padding-right: calc(var(--gap) / 2);
+    padding-left: calc(var(--gap) / 2);
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-width);
+  }
+}
